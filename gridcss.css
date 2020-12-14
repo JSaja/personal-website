@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.container div {
+    background: #eee;
+    padding: 1em;
+}
+
+.container :nth-child(odd) {
+    background:  yellow;
+}
