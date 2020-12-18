@@ -1127,10 +1127,10 @@ a:hover {
 		display: grid;
 		grid-template-columns: minmax(auto,50%) minmax(auto,50%);
 		grid-gap: 3.25em;
-		/* border: 5px solid blue; */
+		border: 3px solid blue;
 	}
 
-	.card-container:hover .flip-card-inner {
+	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
 		transform: rotateY(180deg);
 	}
 
