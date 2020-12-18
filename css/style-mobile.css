@@ -279,3 +279,42 @@ h3
 
 
 
+/****************/
+/* Special Mods */
+/****************/
+
+	/* Code for devices with max-width of > 280px  */
+
+	/*Once on Mobile, only do 1 single column, text would be hard to read otherwise */
+	.paragraph {
+		display: grid;
+		grid-template-columns: minmax(auto,100%);
+		grid-gap: 3.25em;
+	}
+
+	/* Text Sizes for Back of cards on mobile devices */
+	@media all and (max-width: 480px) {
+		.card-back {
+			font-size : 12px;
+		}
+	}
+	/* @media all and (max-width: 423px) {
+		.card-back {
+			font-size : 11.5px;
+		}
+	}
+	@media all and (max-width: 412px) {
+		.card-back {
+			font-size : 11px;
+		}
+	}
+	@media all and (max-width: 400px) {
+		.card-back {
+			font-size : 10.5px;
+		}
+	}
+	@media all and (max-width: 389px) {
+		.card-back {
+			font-size : 10px;
+		}
+	} */

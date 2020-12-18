@@ -918,6 +918,7 @@ a:hover {
 	overflow:hidden;
 	width: 100%;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	text-align: center;
 
 	/* HOVER OFF TRANSITION */
 	transform:scale(1.00);
@@ -1043,7 +1044,18 @@ a:hover {
 	}
 
 	.name-pic-title-content {
+		position: relative;
+		/* border: 2px solid orange; */
+		width: 100%;
 		text-align: center;
+	}
+
+	.wrapper {
+		/* border: 2px solid yellow; */
+	}
+
+	.contact-info {
+		/* border: 2px solid purple; */
 	}
 
 	/*Name on Top*/
@@ -1071,101 +1083,137 @@ a:hover {
 		text-align: center;
 	}
 
+
+/************************/
+/* Collapsible Function */
+/************************/
+	.collapsible {
+		background-color: #777;
+		color: white;
+		cursor: pointer;
+		/* 18px is hardcoded */
+		/* padding: 18px 0px 18px 18px; */
+		padding: 18px;
+		width: 100%;
+		border: none;
+		outline: none;
+		font-size: 15px;
+	}
+  
+	.active, .collapsible:hover {
+		background-color: #555;
+	}
+
+	/* + and - icons */
+	/* .collapsible:after {
+		content: '\002B';
+		color: white;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+
+	.active:after {
+		content: "\2212";
+	} */
+
+
 /*********/
 /* Cards */
 /*********/
+
+	.paragraph {
+		/* border: 3px solid blue; */
+		display: grid;
+		grid-template-columns: minmax(auto,50%) minmax(auto,50%);
+		grid-gap: 3.25em;
+		/* border: 5px solid blue; */
+	}
+
+	.card-container:hover .flip-card-inner {
+		transform: rotateY(180deg);
+	}
+
+	.flip-card-inner {
+		/* font-size: 1em; */
+		position: relative;
+		border-radius: 5px;
+		width: 100%;
+		/*Hard coded height of cards*/
+		height: 205px;
+		transition: transform 1s;
+		transform-style: preserve-3d;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		background: linear-gradient(45deg, rgba(158,179,198,1) 0%, rgba(188,207,222,1) 39%, rgba(194,204,223,1) 78%);
+		/* border: 2px solid palegreen; */
+		word-wrap: break-word;
+	}
+
+	.card-front, .card-back {
+		position: absolute;		
+		font-weight: bold;
+		border-radius: 5px;
+		width: 100%;
+		height: 100%;
+		max-height: 100%;
+		/* border: 2px solid red; */
+		backface-visibility: hidden;
+		/* Display options */
+		/* Option 1 - -webkit-box */
+		/* display: -webkit-box;
+		-webkit-box-align: center; */
+
+		/* Option 2 - Flex */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		/* Option 3 */
+		/* display: block; */
+		box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+		padding: 14px 80px 18px 36px;
+		cursor: pointer;
+	  }
+	  
+	.card-front {
+		/* font-size: 18px; */
+	}
+	  
+	.card-back {
+		/* font-size: 15px; */
+		height: 205px;
+		/*overflow: hidden;
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+		display: block;
+		line-height: 1em; 
+		max-height: 2em; a x number of line to show (ex : 2 line)  */
+		transform: rotateY(180deg);
+	}
+
+
+ 
 	.card {
-		border-radius: 4px;
+		/* border-radius: 4px;
 		background-color: #b5c1d4;
 		box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
 		transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-		padding: 14px 80px 18px 36px; */
+		padding: 14px 80px 18px 36px;
 		cursor: pointer;
-		height: 100%;
-		border: 2px solid purple;
+		height: 100%; */
+		/* border: 2px solid purple; */
 	}
-
-  .flip-card-inner {
-	/* position: absolute; */
-	width: 100%;
-	/*Hard coded*/
-	height: 175px;
-	text-align: center;
-	transition: transform 1s;
-	transform-style: preserve-3d;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	
-  }
 
   .card:hover{
 	transform: scale(1.05);
 	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-  .card-container {
-	  border: 2px solid cyan;
-  }
-
-  .flip-card-inner {
-	  border: 2px solid yellow;
-  }
-
-  .card-front, .card-back {
-	  border: 2px solid red;
-  }
   
-  .card-container:hover .flip-card-inner {
-	transform: rotateY(180deg);
-  }
-  
-  .card-front, .card-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	/*Keep text perfectly centered */
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
-  }
-  
-  .card-front {
-	font-weight: bold;
-	font-size: 18px;
-	border-radius: 4px;
-	background-color: #b5c1d4; 
-	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-	padding: 14px 80px 18px 36px;
-	cursor: pointer;
-	height: 100%;
-	text-align: center;
-	/* background: linear-gradient(135deg, #E3E3E3 0%,#5D6874 100%); */
-  }
-  
-  .card-back {
-	font-weight: bold;
-	font-size: 16px;
-	border-radius: 4px;
-	background-color: #b5c1d4;
-	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-	  padding: 14px 80px 18px 36px;
-	  cursor: pointer;
-	height: 100%;
-	transform: rotateY(180deg);
-  }
-
-   .paragraph-container {
-	   /* border: 3px solid orange; */
-   }
-
-   .paragraph {
-	   border: 3px solid blue;
-	   display: grid;
-	   grid-template-columns: minmax(auto,50%) minmax(auto,50%);
-	   grid-gap: 1.5em;
-   }
+/***************/
+/* Card Images */
+/***************/
 
    .card-1 {
 		background-image: url(../images/leadership.png);
@@ -1237,6 +1285,13 @@ a:hover {
 		background-size: 65px;
 	}
 
+	.card-11 {
+		background-image: url(../images/hands-helping-solid.svg);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: 65px;
+	}
+
  
 
 
@@ -1250,13 +1305,20 @@ a:hover {
 	}
 
 	.topics {
-		font-family: Poppins, sans-serif;
+		/* font-family: Poppins, sans-serif;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 15px;
 		line-height: 22px;
 
-		color: #0F8AFC;
+		color: #0F8AFC; */
+		/* display: none; */
+		padding: 0 18px;
+		overflow: hidden;
+		max-height: 0;
+		/* border: 3px solid black; */
+		text-align: center;
+		transition: max-height 0.2s ease-out;
 	}
 
 	.dates {
@@ -1276,29 +1338,25 @@ a:hover {
 		text-align: center;
 	}
 
-	.paragraph {
-		/* border: 2px solid lime; */
-		/* padding-left: 45px; */
-	}
-
 	.paragraph-content {
 		text-align: center;
 
 	}
 
 	.experience {
+	}
+
+	.education {
 		/* border: 3px solid black; */
 		text-align: center;
 	}
 
-	/* .education {
-		border: 3px solid black;
-	}
-
 	.certifications {
-		border: 3px solid black;
+		/* border: 3px solid black; */
+		text-align: center;
 	}
 
 	.projects {
-		border: 3px solid black;
-	} */
+		/* border: 3px solid black; */
+		text-align: center;
+	}

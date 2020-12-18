@@ -1,0 +1,22 @@
+/* .paragraph {
+    border: 2px solid blue;
+} */
+
+#flip-card-inner {
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    /* overflow: hidden; */
+    font-size: 1em;
+    position: relative;
+}
+
+
+.card-front, .card-back {
+    position: absolute;
+    border: 2px solid red;
+}
+
+.card-back {
+
+}
