@@ -1180,6 +1180,7 @@ a:hover {
 		grid-row-gap: 2.5em;
 		grid-column-gap: 3.5em;
 		margin-bottom: 15px;
+		border: 2px solid blue;
 	}
 
 	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
@@ -1188,6 +1189,7 @@ a:hover {
 
 	.card-container {
 		/* background: linear-gradient(180deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%); */
+		
 	}
 
 	.flip-card-inner {
@@ -1203,7 +1205,6 @@ a:hover {
 		background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		color:#e6e6e6;
 		/* word-wrap: break-word; */
-		background-color: #000;
 	}
 
 	.card-front, .card-back {
@@ -1218,7 +1219,7 @@ a:hover {
 		backface-visibility: hidden;
 		/* Display options */
 		/* Option 1 - -webkit-box */
-		/* display: -webkit-box;
+		/* display: -webkit-box;*/
 
 		/* Option 2 - Flex */
 		display: flex;
@@ -1237,7 +1238,6 @@ a:hover {
 	}
 	  
 	.card-back {
-		background-color: #000;
 		/* font-size: 15px; */
 		/*overflow: hidden;
 		text-overflow: ellipsis;
