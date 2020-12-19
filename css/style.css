@@ -24,7 +24,8 @@ body, #skel-panels-pageWrapper {
 	/* background: #686868 url(images/main-bg.png) repeat; */
 	/* background: #474c53 repeat; */
 	background: rgb(106,124,141);
-	background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
+	/* background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%); */
+	background: linear-gradient(90deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%);
 }
 
 h1, h2, h3 {
@@ -840,7 +841,9 @@ a:hover {
 
 		/*Blue-Grey Gradient background */
 		background: rgb(106,124,141);
-		background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
+		/* background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%); */
+		background: linear-gradient(90deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%);
+		
 		
 	}
 	
@@ -888,7 +891,7 @@ a:hover {
 /* Intro Section */
 
 #intro-text {
-	font-family: ;
+	font-family: poppins, sans-serif;
 	/* border: 2px solid blue; */
 }
 
@@ -949,11 +952,7 @@ a:hover {
 } */
 
 #card-intro-sentence {
-	/* display: flex;
-	justify-content: center;
-	align-items: center;
-	vertical-align: middle; */
-	color: #dbdada;
+	color: #e9e9e9;
 	font-size: 24px;
 	font-style: italic;
 	font-weight: semi-bold;
@@ -1054,41 +1053,78 @@ a:hover {
 		/* border: 2px solid yellow; */
 	}
 
-	.contact-info {
-		/* border: 2px solid purple; */
-	}
-
 	/*Name on Top*/
 	.name-pic-title-content h1 {
-		font-style: normal;
-		font-weight: 600;
-		font-size: 24px;
-		line-height: 36px;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 70px;
 
-		color: #0F8AFC;
+		color: #e5f7fc;
 	}
 
 	/*Professional Titles*/
 	.name-pic-title-content h2 {
 		font-style: normal;
 		font-weight: 500;
-		font-size: 16px;
+		font-size: 24px;
 		line-height: 24px;
-		
-		color: #000000;
+		color: #aaeafd;
+		/* border: 2px solid orange; */
+		padding-bottom: 17.5px;
 	}
 
 	/* Contact Bar */
 	.contact-info {
-		text-align: center;
+		font-size: 14px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		display: grid;
+		grid-template-columns: minmax(auto,50%) minmax(auto,50%);
+		justify-items: center;
+		color: #eefcff;
+		width: 60%;
+		/* border: 2px solid purple; */
 	}
-
+	.email {
+		/* border: 2px solid red; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#email-icon {
+		float: left;
+		/* border: 2px solid yellow; */
+	}
+	#email-name {
+		float: left;
+		margin: 0 auto;
+	}
+	.location {
+		/* border: 2px solid blue; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#location-icon {
+		float: left;
+		/* border: 2px solid lime; */
+	}
+	#location-name {
+		float: left;
+		margin: 0 auto;
+	}
 
 /************************/
 /* Collapsible Function */
 /************************/
 	.collapsible {
-		background-color: #777;
+		/* background-color: #777; */
+		font-family: poppins, sans-serif;
+		font-size: 24px;
+		border-radius: 100px;
+		background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
+		box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.2);
 		color: white;
 		cursor: pointer;
 		/* 18px is hardcoded */
@@ -1097,11 +1133,20 @@ a:hover {
 		width: 100%;
 		border: none;
 		outline: none;
-		font-size: 15px;
+		margin-bottom: 22.5px;
+
+		/* HOVER OFF TRANSITION */
+		transform:scale(1.00);
+		transition-duration: .65s;
 	}
   
 	.active, .collapsible:hover {
-		background-color: #555;
+		/* background: white; */
+		background: rgb(92,106,120);
+		background: linear-gradient(107deg, rgba(92,106,120,1) 0%, rgba(113,127,136,1) 50%, rgba(121,128,140,1) 100%);
+		transform: scale(1.02);
+		box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.55);
+		transition: .6s;
 	}
 
 	/* + and - icons */
@@ -1126,12 +1171,17 @@ a:hover {
 		/* border: 3px solid blue; */
 		display: grid;
 		grid-template-columns: minmax(auto,50%) minmax(auto,50%);
-		grid-gap: 3.25em;
-		border: 3px solid blue;
+		grid-row-gap: 2.5em;
+		grid-column-gap: 3.5em;
+		/* border: 3px solid blue; */
 	}
 
 	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
 		transform: rotateY(180deg);
+	}
+
+	.card-container {
+		/* background: linear-gradient(180deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%); */
 	}
 
 	.flip-card-inner {
@@ -1140,18 +1190,18 @@ a:hover {
 		border-radius: 5px;
 		width: 100%;
 		/*Hard coded height of cards*/
-		height: 205px;
-		transition: transform 1s;
+		height: 160px;
+		transition: transform .45s;
 		transform-style: preserve-3d;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-		background: linear-gradient(45deg, rgba(158,179,198,1) 0%, rgba(188,207,222,1) 39%, rgba(194,204,223,1) 78%);
-		/* border: 2px solid palegreen; */
-		word-wrap: break-word;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+		background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
+		color:#e6e6e6;
+		/* word-wrap: break-word; */
 	}
 
 	.card-front, .card-back {
 		position: absolute;		
-		font-weight: bold;
+		font-weight: semi-bold;
 		border-radius: 5px;
 		width: 100%;
 		height: 100%;
@@ -1162,7 +1212,6 @@ a:hover {
 		/* Display options */
 		/* Option 1 - -webkit-box */
 		/* display: -webkit-box;
-		-webkit-box-align: center; */
 
 		/* Option 2 - Flex */
 		display: flex;
@@ -1177,7 +1226,7 @@ a:hover {
 	  }
 	  
 	.card-front {
-		/* font-size: 18px; */
+		font-size: 24px;
 	}
 	  
 	.card-back {
@@ -1203,10 +1252,45 @@ a:hover {
 		/* border: 2px solid purple; */
 	}
 
-  .card:hover{
-	transform: scale(1.05);
-	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
+	.card:hover {
+		transform: scale(1.05);
+		box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+	}
+
+
+	.resume-card {
+		/* border: 2px solid black; */
+		/* background-color: #8b9eaf; */
+		background: rgb(106,124,141);
+		background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
+		display:-webkit-box;
+		  display:-ms-flexbox;
+		  display:flex;
+		border-radius: 10px;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		flex-direction:column;
+		position:relative;
+		overflow:hidden;
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.45);
+		text-align: center;
+	
+		/* HOVER OFF TRANSITION */
+		transform:scale(1.00);
+		transition-duration: .65s;
+	
+	}
+
+	.resume-card:hover {
+		transform: scale(1.05);
+		box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+		transition: .6s;
+	}
+	
 
   
 

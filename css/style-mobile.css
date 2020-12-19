@@ -292,6 +292,39 @@ h3
 		grid-gap: 3.25em;
 	}
 
+	/*Contact info needs to shrink*/
+	@media all and (max-width: 480px) {
+		.contact-info {
+			font-size: 10px;
+			width: 100%;
+		}
+		#email-icon {
+			height: 16px;
+			width: 16px;
+		}
+
+		#location-icon {
+			height: 16px;
+			width: 16px;
+		}
+	}
+
+	@media all and (max-width: 300px) {
+		.contact-info {
+			font-size: 9px;
+			width: 100%;
+		}
+		#email-icon {
+			height: 16px;
+			width: 16px;
+		}
+
+		#location-icon {
+			height: 16px;
+			width: 16px;
+		}
+	}
+
 	/* Text Sizes for Back of cards on mobile devices */
 	@media all and (max-width: 480px) {
 		.card-back {
