@@ -1180,7 +1180,7 @@ a:hover {
 		grid-row-gap: 2.5em;
 		grid-column-gap: 3.5em;
 		margin-bottom: 15px;
-		border: 2px solid orange;
+		border: 2px solid green;
 	}
 
 	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
@@ -1243,6 +1243,7 @@ a:hover {
 		border: 10px solid yellow;
 		margin-top: -10px;
 		color: black;
+		z-index: 2;
 		-webkit-transform: rotateY(180deg);
 	}
 
