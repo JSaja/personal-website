@@ -1227,7 +1227,7 @@ a:hover {
 	}
 	  
 	.card-back {
-		background: transparent;
+		background-image: none;
 		color: black;
 		-webkit-transform: rotateY(180deg);
 	}
