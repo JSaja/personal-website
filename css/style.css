@@ -1181,6 +1181,7 @@ a:hover {
 	}
 
 	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
+		background-image: none;
 		-webkit-transform: rotateY(180deg);
 	}
 
@@ -1227,7 +1228,6 @@ a:hover {
 	}
 	  
 	.card-back {
-		background-image: none;
 		color: black;
 		-webkit-transform: rotateY(180deg);
 	}
@@ -1449,7 +1449,7 @@ a:hover {
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
-		border: 5px solid yellow;
+		border: 5px solid green;
 	}
 
     .card-2 {
