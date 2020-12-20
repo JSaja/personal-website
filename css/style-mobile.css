@@ -288,6 +288,11 @@ h3
 	/* enable click functionality for mobile */
 	/* @media all and (hover: none) {
 	} */
+	@media all and (.card-container:active .flip-card-inner) {
+		.card-back {
+			visibility: visible;
+		}
+	}
 
 	/*Once on Mobile, only do 1 single column, text would be hard to read otherwise */
 	.paragraph {

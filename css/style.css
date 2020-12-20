@@ -1241,10 +1241,9 @@ a:hover {
 	.card-back {
 		font-family: sans-serif;
 		border: 10px solid yellow;
-		margin-top: -10px;
-		color: yellow;
-		/* z-index: 2; */
-		transform: translate3d(0, 0, 200px);
+		margin-top: -40px;
+		color: black;
+		z-index: 1;
 		-webkit-transform: rotateY(180deg);
 	}
 
