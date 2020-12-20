@@ -1230,14 +1230,15 @@ a:hover {
 		cursor: pointer;
 		background-color: rgba(106,124,141,1);
 		background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
-		z-index: -1;
 	}
 	  
 	.card-front {
+		z-index: -1;
 		font-size: 24px;
 	}
 	  
 	.card-back {
+		z-index: 0;
 		color: black;
 		-webkit-transform: rotateY(180deg);
 	}
@@ -1469,6 +1470,7 @@ a:hover {
 		margin: auto;
 		height: 65px; width: 65px;
 		/* border: 2px solid red; */
+		z-index:0;
 	}
 
     .card-2 {
