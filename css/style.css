@@ -1177,7 +1177,7 @@ a:hover {
 		grid-row-gap: 2.5em;
 		grid-column-gap: 3.5em;
 		margin-bottom: 15px;
-		border: 3px solid orange;
+		border: 3px solid yellow;
 	}
 
 	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
@@ -1230,7 +1230,7 @@ a:hover {
 		cursor: pointer;
 		background-color: rgba(106,124,141,1);
 		background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
-		/* z-index: -1; */
+		z-index: -1;
 	}
 	  
 	.card-front {
@@ -1464,11 +1464,11 @@ a:hover {
 
 	.icon {
 		/* cool positioning trick for absolute */
-		position: relative;
+		position: absolute;
 		right: 0; top: 0; bottom: 0;
 		margin: auto;
 		height: 65px; width: 65px;
-		border: 2px solid red;		
+		/* border: 2px solid red; */
 	}
 
     .card-2 {
