@@ -24,8 +24,6 @@ body, #skel-panels-pageWrapper {
 	/* background: #686868 url(images/main-bg.png) repeat; */
 	/* background: #474c53 repeat; */
 	background: rgb(106,124,141);
-	/* background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%); */
-	/* background: linear-gradient(90deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%); */
 	background-image: url(../images/mountain2.jpg);
 	background-repeat: repeat-y;
 }
@@ -847,7 +845,6 @@ a:hover {
 
 		/*Blue-Grey Gradient background */
 		background: rgb(106,124,141);
-		/* background: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%); */
 		background: linear-gradient(90deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%);
 	}
 	
@@ -1180,7 +1177,7 @@ a:hover {
 		grid-row-gap: 2.5em;
 		grid-column-gap: 3.5em;
 		margin-bottom: 15px;
-		border: 2px solid green;
+		border: 3px solid green;
 	}
 
 	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
@@ -1188,8 +1185,8 @@ a:hover {
 	}
 
 	.card-container {
-		/* background: linear-gradient(180deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%); */
-		background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
+		background-color: transparent;
+		perspective: 1500px;
 	}
 
 	.flip-card-inner {
@@ -1202,7 +1199,6 @@ a:hover {
 		transition: transform .45s;
 		transform-style: preserve-3d;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-		/* background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%); */
 		color:#e6e6e6;
 	}
 
@@ -1215,34 +1211,21 @@ a:hover {
 		max-height: 100%;
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
-		/* border: 2px solid red; */
-
-		/* Display options */
-		/* Option 1 - -webkit-box */
-		/* display: -webkit-box;*/
-
-		/* Option 2 - Flex */
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-		/* Option 3 */
-		/* display: block; */
 		box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
 		padding: 14px 80px 18px 36px;
 		cursor: pointer;
-	  }
+		/* background-color: rgb(154, 179, 207); */
+		/* background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%); */
+	}
 	  
 	.card-front {
 		font-size: 24px;
 	}
 	  
 	.card-back {
-		font-family: sans-serif;
-		border: 10px solid yellow;
-		margin-top: -40px;
-		color: black;
-		z-index: 1;
 		-webkit-transform: rotateY(180deg);
 	}
 
@@ -1379,85 +1362,81 @@ a:hover {
 /***************/
 
    .card-1 {
-		background-image: url(../images/leadership.png);
+		background-image: url(../images/leadership.png), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px;
+		background-size: 65px, contain;
 	}
 
     .card-2 {
-		background-image: url(../images/up-arrow.svg);
+		background-image: url(../images/up-arrow.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 	    background-repeat: no-repeat;
 		background-position: right;
-		background-size: 50px;
+		background-size: 65px, contain;
 	}
 
 	.card-3 {
-		background-image: url(../images/code-solid.svg);
+		background-image: url(../images/code-solid.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px;
+		background-size: 65px, contain;
 	}
 
 	.card-4 {
-		background-image: url(../images/user-graduate-solid.svg);
+		background-image: url(../images/user-graduate-solid.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
 
 	.card-5 {
-		background-image: url(../images/cogs-icon.png);
+		background-image: url(../images/cogs-icon.png), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
 
 	.card-6 {
-		background-image: url(../images/lightbulb-solid.svg);
+		background-image: url(../images/lightbulb-solid.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
 
 	.card-7 {
-		background-image: url(../images/server-solid.svg);
+		background-image: url(../images/server-solid.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 	    background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
 
 	.card-8 {
-		background-image: url(../images/aws-icon.png);
+		background-image: url(../images/aws-icon.png), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
 
 	.card-9 {
-		background-image: url(../images/database-solid.svg);
+		background-image: url(../images/database-solid.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
 
 	.card-10 {
-		background-image: url(../images/ticket-alt-solid.svg);
+		background-image: url(../images/ticket-alt-solid.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
 
 	.card-11 {
-		background-image: url(../images/hands-helping-solid.svg);
+		background-image: url(../images/hands-helping-solid.svg), linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
 	}
-
- 
-
-
 
 
 /***********/
@@ -1473,13 +1452,13 @@ a:hover {
 		font-weight: bold;
 		font-size: 15px;
 		line-height: 22px;
-
-		color: #0F8AFC; */
+		/* overflow: hidden; */
 		/* display: none; */
-		padding: 0 18px;
-		overflow: hidden;
-		max-height: 0;
 		/* border: 3px solid black; */
+		/* color: #0F8AFC; */
+		overflow: hidden;
+		padding: 0 18px;
+		max-height: 0;
 		text-align: center;
 		transition: max-height 0.2s ease-out;
 	}
@@ -1503,7 +1482,6 @@ a:hover {
 
 	.paragraph-content {
 		text-align: center;
-
 	}
 
 	.experience {
