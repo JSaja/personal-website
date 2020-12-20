@@ -1189,7 +1189,7 @@ a:hover {
 
 	.card-container {
 		/* background: linear-gradient(180deg, rgba(131,138,148,1) 0%, rgba(156,172,184,1) 50%, rgba(158,177,195,1) 100%); */
-		
+		background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 	}
 
 	.flip-card-inner {
@@ -1203,7 +1203,6 @@ a:hover {
 		transform-style: preserve-3d;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 		/* background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%); */
-		background: white;
 		color:#e6e6e6;
 	}
 
