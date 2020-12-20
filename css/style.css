@@ -1180,7 +1180,7 @@ a:hover {
 		grid-row-gap: 2.5em;
 		grid-column-gap: 3.5em;
 		margin-bottom: 15px;
-		border: 2px solid red;
+		border: 2px solid orange;
 	}
 
 	.card-container:hover .flip-card-inner, .card-container:active .flip-card-inner  {
@@ -1234,13 +1234,12 @@ a:hover {
 	  
 	.card-front {
 		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
 		font-size: 24px;
 	}
 	  
 	.card-back {
 		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
+		border: 2px solid yellow;
 		color: black;
 		-webkit-transform: rotateY(180deg);
 	}
