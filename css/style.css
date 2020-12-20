@@ -1242,8 +1242,9 @@ a:hover {
 		font-family: sans-serif;
 		border: 10px solid yellow;
 		margin-top: -10px;
-		color: black;
-		z-index: 2;
+		color: yellow;
+		/* z-index: 2; */
+		transform: translate3d(0, 0, 200px);
 		-webkit-transform: rotateY(180deg);
 	}
 
