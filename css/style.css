@@ -1219,10 +1219,11 @@ a:hover {
 		cursor: pointer;
 		background-color: rgba(106,124,141,1);
 		background: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
-		z-index: -1;
+
 	}
 	  
 	.card-front {
+		z-index: -1;
 		font-size: 24px;
 	}
 	  
@@ -1448,7 +1449,7 @@ a:hover {
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: 65px;
-		border: 5px solid orange;
+		border: 5px solid yellow;
 	}
 
     .card-2 {
