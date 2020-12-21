@@ -8,6 +8,7 @@ $cardGradient: linear-gradient(45deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1
 $buttonGradient: linear-gradient(90deg, rgba(106,124,141,1) 0%, rgba(128,144,155,1) 50%, rgba(143,150,162,1) 100%);
 $certButtonGradient: linear-gradient(107deg, rgba(86,144,203,1) 0%, rgba(104,166,204,1) 60%, rgba(71,163,218,1) 100%);
 $currentFont: poppins, sans-serif;
+$cardBGSize: 65px, contain;
 /*
 	MegaCorp by TEMPLATED
     templated.co @templatedco
@@ -1068,7 +1069,7 @@ a:hover {
 		font-size: 28px;
 		line-height: 24px;
 		color: #bbf7ff;
-		text-shadow: 1px 1px 2px #80adca;
+		text-shadow: 1px 1px 2px #687680;
 		/* border: 2px solid orange; */
 		padding-bottom: 17.5px;
 	}
@@ -1458,6 +1459,11 @@ a:hover {
 		}	
 	}
 
+	#project-gif {
+		// border: 2px solid yellow;
+		margin-top: 15px;
+	}
+
 /***************/
 /* Card Images */
 /***************/
@@ -1466,77 +1472,77 @@ a:hover {
 		background-image: url(../images/leadership.png), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-        background-size: 65px, contain;
+        background-size: $cardBGSize;
 	}
 
     .card-2 {
 		background-image: url(../images/up-arrow.svg), $cardGradient;
 	    background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-3 {
 		background-image: url(../images/code-solid.svg), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-4 {
 		background-image: url(../images/user-graduate-solid.svg), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-5 {
 		background-image: url(../images/cogs-icon.png), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-6 {
 		background-image: url(../images/lightbulb-solid.svg), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-7 {
 		background-image: url(../images/server-solid.svg), $cardGradient;
 	    background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-8 {
 		background-image: url(../images/aws-icon.png), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-9 {
 		background-image: url(../images/database-solid.svg), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-10 {
 		background-image: url(../images/ticket-alt-solid.svg), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	}
 
 	.card-11 {
 		background-image: url(../images/hands-helping-solid.svg), $cardGradient;
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 65px, contain;
+		background-size: $cardBGSize;
 	} 
 
 /***********/

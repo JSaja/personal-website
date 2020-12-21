@@ -1,0 +1,530 @@
+/*
+	MegaCorp by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+body
+{
+	margin-top: 0;
+	font-size: 9.50pt;
+	letter-spacing: 0;
+}
+
+h2, h3, h4, h5, h6
+{
+}
+
+h2
+{
+	letter-spacing: normal !important;
+	font-size: 1.5em !important;
+}
+
+h3
+{
+	font-size: 1.00em !important;
+}
+
+.container
+{
+	padding: 0px 15px;
+}
+
+
+/* Sections/Articles */
+
+	section,
+	article
+	{
+		clear: both;
+		margin: 2em 0em 2em 0em !important;
+	}
+
+	section > :first-child,
+	article > :first-child
+	{
+		margin-top: 0 !important;
+	}
+
+	section:first-child,
+	article:first-child
+	{
+		margin-top: 0 !important;
+	}
+
+
+.button
+{
+	display: block;
+}
+
+.button span
+{
+	display: block;
+}
+
+/* List style 5 */
+
+	ul.style5 
+	{
+		margin-left: 1.35em;
+	}
+	
+	ul.style5 li
+	{
+		line-height: 1.75em;
+		list-style: decimal;
+	}
+
+/* Header */
+
+	#header
+	{
+	}
+
+/* Logo */
+
+	#logo {
+		position: static;
+		padding: 6em 0em 4em 0em;
+		text-align: center;
+	}
+	
+	#logo h1 a {
+		padding-top: 3em;
+		letter-spacing: -1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 2.50em;
+		font-weight: 900;
+		color: #FFF;
+	}
+	
+	#nav
+	{
+		display: none;
+	}
+
+/*********************************************************************************/
+/* UI                                                                            */
+/*********************************************************************************/
+
+#titleBar
+{
+}
+
+	#titleBar .title 
+	{
+		display: none;
+		color: #fff !important;
+		text-align: center;
+		line-height: 44px;
+		font-weight: 800;
+	}
+
+	#titleBar .toggle
+	{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 80px;
+		height: 60px;
+	}
+
+		#titleBar .toggle:before
+		{
+			content: '';
+			display: block;
+			width: 60px;
+			height: 40px;
+			background: rgba(232,232,232,0.5);
+			border-radius: 4px;
+			position: absolute;
+			left: 5px;
+			top: 5px;
+			box-shadow: 0.125em 0.125em 0 0 rgba(0,0,0,0.10);
+		}
+
+		#titleBar .toggle:after
+		{
+			content: '';
+			display: block;
+			width: 20px;
+			height: 12px;
+			position: absolute;
+			left: 25px;
+			top: 20px;
+			background: url('images/mobileUI-site-nav-opener-bg.svg') 0px 0px no-repeat;
+			opacity: 1;
+		}
+
+		#titleBar .toggle:active:after
+		{
+			opacity: 1;
+		}
+
+#navPanel
+{
+	background: #101214;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #888;
+	letter-spacing: 2px;
+	font-size: 1em;
+}
+
+	#navPanel .link
+	{
+		display: block;
+		color: #ddd;
+		text-decoration: none;
+		height: 44px;
+		line-height: 44px;
+		border: 0;
+		border-top: solid 1px #202122;
+		padding: 0 1em 0 1em;
+	}
+	
+		#navPanel .link:first-child
+		{
+			border-top: 0;
+		}
+		
+		#navPanel .link.depth-0
+		{
+			font-weight: 600;
+			color: #fff;
+		}
+
+		#navPanel .indent-1 { display: inline-block; width: 1em; }
+		#navPanel .indent-2 { display: inline-block; width: 2em; }
+		#navPanel .indent-3 { display: inline-block; width: 3em; }
+		#navPanel .indent-4 { display: inline-block; width: 4em; }
+		#navPanel .indent-5 { display: inline-block; width: 5em; }
+		#navPanel .depth-0 { color: #fff; }
+
+/* Banner */
+
+	#banner
+	{
+		height: auto !important;
+		padding: 2em 0 0 0 !important;
+		background-position: right bottom;
+	}
+
+	#banner section
+	{
+		margin-bottom: 28em;
+		text-align: center;
+	}
+
+
+	#banner header .byline
+	{
+		padding: 0em 0em;
+		font-size: 1.20em;
+	}
+
+	#banner h2
+	{
+		padding: 0 0 0 0 !important;
+		letter-spacing: normal;
+	}
+
+	#banner p
+	{
+		padding: 0 0 0 0 !important;
+		font-size: 1.00em;
+	}
+
+/* Wrapper */
+
+	#wrapper
+	{
+		padding: 3em 0em 3em 0em;
+	}
+
+/* Featured Area */
+
+	#featured-wrapper
+	{
+		overflow: hidden;
+		padding: 4em 0em 2em 0em;
+	}
+
+/* Sidebar */
+
+	#sidebar
+	{
+	}
+
+	#sidebar #box1 section
+	{
+		margin: 0em 0em 2em 0em !important;
+	}
+
+/* Two Column Area */
+
+	#two-column section
+	{
+		margin: 0em 0em 2em 0em !important;
+	}
+
+/* Copyright */
+
+	#copyright
+	{
+	}
+
+
+
+/****************/
+/* Special Mods */
+/****************/
+$cardBGSize: 60px, contain;
+    /* Code for devices with max-width of > 280px  */
+    
+    /*Contact info needs to shrink*/
+	@media all and (max-width: 480px) {
+		.contact-info {
+			font-size: 10px;
+			width: 100%;
+		}
+		#email-icon {
+			height: 16px;
+			width: 16px;
+		}
+
+		#location-icon {
+			height: 16px;
+			width: 16px;
+		}
+	}
+
+	@media all and (max-width: 300px) {
+		.contact-info {
+			font-size: 9px;
+			width: 100%;
+		}
+		#email-icon {
+			height: 16px;
+			width: 16px;
+		}
+
+		#location-icon {
+			height: 16px;
+			width: 16px;
+		}
+	}
+
+
+	/*Once on Mobile, only do 1 single column, text would be hard to read otherwise */
+	.paragraph {
+		display: grid;
+		grid-template-columns: minmax(auto,100%);
+		grid-gap: 3.25em;
+    }
+
+    .cert-body {
+        display: grid;
+		grid-template-columns: minmax(auto,100%);
+		grid-gap: .1em;
+    }
+
+    .project-body {
+        display: grid;
+		grid-template-columns: minmax(auto,100%);
+		grid-gap: .1em;
+    }
+
+
+
+    /*Certification Section*/
+    @media all and (max-width: 480px) {
+        #cert-title {
+            font-size: 17.5px;
+        }
+        .cert-date {
+            font-size: 15.5px;
+        }
+        .cert-1 p {
+            font-size: 13px;
+        }
+    }
+
+    /*Projects section */
+    @media all and (max-width: 480px) {
+        .project-1 p {
+            font-size: 16px;
+        }
+    }
+
+
+    /* Text Sizes for Back of cards on mobile devices */
+    .aramark-card {
+        width: 100%;
+    }
+
+    /* Titles Cards */
+    @media all and (max-width: 480px) {
+        // Titles Section
+        #cognizant-title {
+            font-size: 23px;
+        }
+        #umn-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #bachelors {
+            font-size: 22px;
+            margin-top: 25px;
+        }
+    }
+
+    /*****Experience Cards******/
+	@media all and (max-width: 480px) {
+
+        //Card Text
+        .flip-card-inner {
+            height: 225px;
+        }
+		.card-back {
+			font-size : 18px;
+        }
+    }
+
+    @media all and (max-width: 466px) {
+        .flip-card-inner {
+            height: 230px;
+        }
+		.card-back {
+			font-size : 17px;
+        }
+        .aramark-card {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media all and (max-width: 452px) {
+        .flip-card-inner {
+            height: 235px;
+        }
+		.card-back {
+			font-size : 16px;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 435px) {
+        .flip-card-inner {
+            height: 240px;
+        }
+		.card-back {
+			font-size : 15px;
+        }
+        .card-front {
+            font-size: 22px;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 419px) {
+        .flip-card-inner {
+            height: 245px;
+        }
+		.card-back {
+			font-size : 14px;
+        }
+        .card-front {
+            font-size: 21px;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 367px) {
+        .flip-card-inner {
+            height: 265px;
+        }
+		.card-back {
+			font-size : 13px;
+        }
+        .card-front {
+            font-size: 20px;
+        }
+        .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10, .card-11 {
+            background-size: 50px, contain;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 352px) {
+        .flip-card-inner {
+            height: 285px;
+        }
+		.card-back {
+			font-size : 12px;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 333px) {
+        .flip-card-inner {
+            height: 305px;
+        }
+		.card-back {
+			font-size : 11px;
+        }
+        .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10, .card-11 {
+            background-size: 45px, contain;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 321px) {
+        .flip-card-inner {
+            height: 325px;
+        }
+		.card-back {
+			font-size : 10px;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 305px) {
+        .flip-card-inner {
+            height: 345px;
+        }
+		.card-back {
+			font-size : 9px;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media all and (max-width: 285px) {
+        .flip-card-inner {
+            height: 350px;
+        }
+		.card-back {
+			font-size : 8.5px;
+        }
+        .aramark-card {
+            margin-bottom: 15px;
+        }
+    }

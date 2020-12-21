@@ -3,26 +3,35 @@
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
-
 body {
-	font-size: 9pt;
+  font-size: 9pt;
 }
 
 /* Banner */
+#banner h2 {
+  font-size: 3.75em;
+}
 
-	#banner
-	{
-	}
+#banner p {
+  font-size: 1.20em;
+}
 
-	#banner h2
-	{
-		font-size: 3.75em;
-	}
+/* 1000px adjustments */
+#cognizant-title {
+  font-size: 32px;
+  padding-top: 10px;
+}
 
-	#banner p
-	{
-		font-size: 1.20em;
-	}
-	
+#umn-title {
+  font-size: 30px;
+  padding-top: 10px;
+}
 
-/* Card back text */
+.card-back {
+  font-size: 16px;
+}
+
+.project-1 p {
+  font-size: 16px;
+}
+/*# sourceMappingURL=style-1000px.css.map */
