@@ -2870,4 +2870,47 @@ header .byline {
   /* border: 3px solid black; */
   text-align: center;
 }
+
+/* Download Section */
+.download {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  background: green;
+  width: 15%;
+  font-family: poppins, sans-serif;
+  font-size: 22px;
+  border-radius: 100px;
+  background: #1c9358;
+  background: linear-gradient(5deg, #1c9358 0%, #24b126 100%, #2dc337 100%);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  outline: none;
+  margin-bottom: 22.5px;
+  /* HOVER OFF TRANSITION */
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: .65s;
+          transition-duration: .65s;
+}
+
+.download a {
+  color: white;
+}
+
+.download:hover {
+  background: #14613b;
+  background: linear-gradient(135deg, #14613b 0%, #1d821e 100%, #2dc337 100%);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.55);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.55);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
 /*# sourceMappingURL=style.css.map */
