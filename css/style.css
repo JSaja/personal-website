@@ -2635,7 +2635,7 @@ header .byline {
 #cert-title {
   text-decoration: none;
   font-family: poppins, sans-serif;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 400;
   background: linear-gradient(107deg, #5690cb 0%, #68a6cc 60%, #47a3da 100%);
   border-radius: 100px;
