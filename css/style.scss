@@ -1431,7 +1431,6 @@ a:hover {
 	}
 
 	#project-title {
-
 		background: linear-gradient(107deg, rgba(38,45,52,1) 0%, rgba(51,69,80,1) 50%, rgba(51,84,105,1) 100%);
 		text-decoration: none;
 		font-family: $currentFont;
@@ -1461,6 +1460,7 @@ a:hover {
 
 	#project-gif {
 		// border: 2px solid yellow;
+		height: 300px;
 		margin-top: 15px;
 	}
 

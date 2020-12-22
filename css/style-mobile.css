@@ -295,6 +295,18 @@ ul.style5 li {
   grid-gap: .1em;
 }
 
+.resume-card {
+  width: 100%;
+}
+
+#at1, #at2 {
+  padding-left: 10px;
+}
+
+.dates {
+  font-size: 15.75px;
+}
+
 /*Certification Section*/
 @media all and (max-width: 480px) {
   #cert-title {
@@ -313,17 +325,26 @@ ul.style5 li {
   .project-1 p {
     font-size: 16px;
   }
+  #project-title {
+    font-size: 19px;
+    width: 75%;
+  }
 }
 
 /* Text Sizes for Back of cards on mobile devices */
 .aramark-card {
   width: 100%;
+  margin-bottom: 15px;
 }
 
 /* Titles Cards */
 @media all and (max-width: 480px) {
   #cognizant-title {
     font-size: 23px;
+  }
+  #aramark-title {
+    padding-top: 15px;
+    font-size: 28px;
   }
   #umn-title {
     font-size: 24px;
@@ -335,13 +356,19 @@ ul.style5 li {
   }
 }
 
-/*****Experience Cards******/
+/*****Resume - Everything******/
 @media all and (max-width: 480px) {
   .flip-card-inner {
     height: 225px;
   }
   .card-back {
     font-size: 18px;
+  }
+  #cert-title {
+    font-size: 15.5px;
+  }
+  #project-gif {
+    height: 250px;
   }
 }
 
@@ -352,8 +379,8 @@ ul.style5 li {
   .card-back {
     font-size: 17px;
   }
-  .aramark-card {
-    margin-bottom: 10px;
+  #cert-title {
+    font-size: 15px;
   }
 }
 
@@ -364,8 +391,11 @@ ul.style5 li {
   .card-back {
     font-size: 16px;
   }
-  .aramark-card {
-    margin-bottom: 15px;
+  #cert-title {
+    font-size: 14.5px;
+  }
+  #project-gif {
+    height: 235px;
   }
 }
 
@@ -379,8 +409,11 @@ ul.style5 li {
   .card-front {
     font-size: 22px;
   }
-  .aramark-card {
-    margin-bottom: 15px;
+  #cognizant-title {
+    font-size: 22px;
+  }
+  #project-gif {
+    height: 230px;
   }
 }
 
@@ -394,12 +427,36 @@ ul.style5 li {
   .card-front {
     font-size: 21px;
   }
-  .aramark-card {
-    margin-bottom: 15px;
+  #cognizant-logo {
+    margin-top: 18px;
+    height: 75px;
+    width: 75px;
+  }
+  #aramark-logo {
+    margin-top: 18px;
+    height: 75px;
+    width: 75px;
+  }
+  #cognizant-title {
+    font-size: 20px;
+  }
+  #aramark-title {
+    font-size: 26px;
+  }
+  #umn-logo {
+    margin-top: 18px;
+    height: 85px;
+    width: 110px;
+  }
+  #project-gif {
+    height: 225px;
   }
 }
 
 @media all and (max-width: 367px) {
+  .dates {
+    font-size: 14px;
+  }
   .flip-card-inner {
     height: 265px;
   }
@@ -415,6 +472,18 @@ ul.style5 li {
   .aramark-card {
     margin-bottom: 15px;
   }
+  #aramark-title {
+    font-size: 24px;
+  }
+  #umn-title {
+    font-size: 20px;
+  }
+  .cert-date {
+    font-size: 14px;
+  }
+  #project-title {
+    width: 90%;
+  }
 }
 
 @media all and (max-width: 352px) {
@@ -427,9 +496,18 @@ ul.style5 li {
   .aramark-card {
     margin-bottom: 15px;
   }
+  #cognizant-title {
+    font-size: 16px;
+  }
+  #umn-title {
+    font-size: 18.5px;
+  }
 }
 
 @media all and (max-width: 333px) {
+  .dates {
+    font-size: 13px;
+  }
   .flip-card-inner {
     height: 305px;
   }
@@ -442,9 +520,18 @@ ul.style5 li {
   .aramark-card {
     margin-bottom: 15px;
   }
+  #at1, #at2 {
+    padding-left: 5px;
+  }
+  #umn-title {
+    font-size: 17px;
+  }
 }
 
 @media all and (max-width: 321px) {
+  .dates {
+    font-size: 12px;
+  }
   .flip-card-inner {
     height: 325px;
   }
@@ -454,9 +541,15 @@ ul.style5 li {
   .aramark-card {
     margin-bottom: 15px;
   }
+  #bachelors {
+    font-size: 20px;
+  }
 }
 
 @media all and (max-width: 305px) {
+  .dates {
+    font-size: 11px;
+  }
   .flip-card-inner {
     height: 345px;
   }
@@ -465,6 +558,20 @@ ul.style5 li {
   }
   .aramark-card {
     margin-bottom: 15px;
+  }
+  #cognizant-title {
+    font-size: 14px;
+  }
+  #bachelors {
+    font-size: 19px;
+  }
+  #umn-logo {
+    margin-top: 18px;
+    height: 60px;
+    width: 85px;
+  }
+  #project-title {
+    font-size: 17px;
   }
 }
 
@@ -477,6 +584,9 @@ ul.style5 li {
   }
   .aramark-card {
     margin-bottom: 15px;
+  }
+  #bachelors {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style-mobile.css.map */
