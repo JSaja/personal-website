@@ -402,6 +402,10 @@ $cardBGSize: 60px, contain;
             font-size: 22px;
             margin-top: 25px;
 		}
+		.download {
+			font-size: 20px;
+			width: 50%;
+		}
     }
 
     /*****Resume - Everything******/
@@ -446,6 +450,10 @@ $cardBGSize: 60px, contain;
 		}
 		#project-gif {
 			height: 235px;
+		}
+		.download {
+			font-size: 20px;
+			width: 60%;
 		}
     }
 
@@ -533,7 +541,11 @@ $cardBGSize: 60px, contain;
 		}
 		#project-title {
 			width: 90%;
-		}	
+		}
+		.download {
+			font-size: 18px;
+			width: 65%;
+		}
     }
 
     @media all and (max-width: 352px) {
@@ -593,6 +605,10 @@ $cardBGSize: 60px, contain;
 		}
 		#bachelors {
 			font-size: 20px;
+		}
+		.download {
+			font-size: 17px;
+			width: 70%;
 		}
     }
 
