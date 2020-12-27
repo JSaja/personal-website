@@ -1933,7 +1933,7 @@ ul.style5 li {
 /* Header */
 #header-wrapper {
   font-family: poppins, sans-serif;
-  background: url(../images/banner.png) no-repeat center top;
+  background: url(../images/banner-min.png) no-repeat center top;
   background-size: cover;
   position: relative;
 }
