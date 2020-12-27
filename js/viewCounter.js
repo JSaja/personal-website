@@ -1,6 +1,4 @@
 
-
-console.log("Hello world from viewCounter.js");
 var hitNum;
 
 window.onload = function() {
