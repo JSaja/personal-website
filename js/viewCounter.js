@@ -9,6 +9,7 @@ window.onload = function() {
     function callAPI() {
         const xhttp = new XMLHttpRequest();        
         xhttp.open("GET", apiUrl);
+        //Set a header to force preflight request
         xhttp.setRequestHeader('Content-Type', 'application/json');
         xhttp.send();
 
