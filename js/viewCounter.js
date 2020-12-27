@@ -1,37 +1,24 @@
 
 
 console.log("Hello world from viewCounter.js");
+var hitNum;
 
 window.onload = function() {
-    // apiUrl = 'https://e8wa6k3qf5.execute-api.us-east-2.amazonaws.com/Prod';
-    //Call API
-    // fetch('https://e8wa6k3qf5.execute-api.us-east-2.amazonaws.com/Prod')
-    // .then(response => {
-    //     console.log("API RESPONSE\n");
-    //     console.log(response.json);
-    //     return response.json();
-    // });
 
-    // fetch(
-    //     'https://e8wa6k3qf5.execute-api.us-east-2.amazonaws.com/Prod')
-    //     .then(response => response.json())
-    //     .then(data => console.log(data));
+    const apiUrl = 'https://e8wa6k3qf5.execute-api.us-east-2.amazonaws.com/Prod';
+
 
     function callAPI() {
-        const xhttp = new XMLHttpRequest();
-        const apiUrl = 'https://e8wa6k3qf5.execute-api.us-east-2.amazonaws.com/Prod';
+        const xhttp = new XMLHttpRequest();        
         xhttp.open("GET", apiUrl);
+        xhttp.setRequestHeader('Content-Type', 'application/json');
         xhttp.send();
 
         xhttp.onreadystatechange=(e)=>{
-            console.log("TEST" + xhttp.responseText);
+            hitNum = xhttp.responseText;
+            document.getElementById('view-count-number').innerHTML = hitNum;
         }
     }
 
     callAPI();
-
-
-    //Retrieve value
-
-    //Print to console
 }
