@@ -1,5 +1,5 @@
 
-var hitNum;
+var visitCount;
 
 window.onload = function() {
 
@@ -13,8 +13,8 @@ window.onload = function() {
         xhttp.send();
 
         xhttp.onreadystatechange=(e)=>{
-            hitNum = xhttp.responseText;
-            document.getElementById('view-count-number').innerHTML = hitNum;
+            visitCount = xhttp.responseText;
+            document.getElementById('view-count-number').innerHTML = visitCount;
         }
     }
 
