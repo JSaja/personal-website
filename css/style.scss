@@ -1696,3 +1696,41 @@ a:hover {
 	margin-right: auto;
 
 }
+
+
+/****************/
+/* Code Section */
+/****************/
+.container {
+	border: 2px solid yellow;
+}
+
+.post {
+	text-align: center;
+}
+
+.post-header {
+	font-weight: 500;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+#blog-posts {
+	font-family: $currentFont;
+	font-weight: 600;
+	font-size: 44px;
+	text-align: center;
+	margin-bottom: 50px;
+	color:rgb(8, 8, 8);
+	text-shadow: 1px 1px 4px #4d4d4d;
+
+}
+#AWS-Diagram {
+	height: 500px;
+	width: 750px;
+}
+
+#Figma-Resume {
+	height: 600px;
+	width: 600px;
+}
