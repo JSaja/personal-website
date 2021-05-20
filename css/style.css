@@ -2623,7 +2623,6 @@ header .byline {
 
 /*Center the aramark card */
 .pg2 {
-  /* border: 2px solid yellow; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
