@@ -2965,7 +2965,7 @@ header .byline {
 /* Code Section */
 /****************/
 .container {
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
 }
 
 .post {
