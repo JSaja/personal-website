@@ -29,8 +29,9 @@ body {
 }
 
 body, #skel-panels-pageWrapper {
-  background: #bad0e5;
-  background-image: url(../images/mountain2.jpg);
+  /* background: #bad0e5; */
+  /* background-image: url(../images/mountain2.jpg); */
+  background: linear-gradient(90deg, rgba(185,213,241,1) 0%, rgba(174,214,244,1) 43%, rgba(180,226,247,1) 100%);
   background-repeat: repeat-y;
 }
 
@@ -2970,15 +2971,28 @@ header .byline {
 
 .post-body {
   text-align: left;
-  font-size: 20px;
-  list-style-type: disc;
-  
+  font-size: 21px;
+  font-weight: 500;
 }
 
+.post-body li {
+  list-style: disc inside;
+  margin-left: 25px;
+}
+
+
 .post-header {
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 28px;
   margin-bottom: 10px;
+  text-align: left;
+}
+
+.post-date {
+  font-family: verdana;
+  /* font-style: italic; */
+  transform: skew(-13deg);
+  text-align: left;
 }
 
 #blog-posts {
