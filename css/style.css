@@ -2281,7 +2281,6 @@ header .byline {
 /* Header Content */
 /******************/
 .container {
-  /* border: 2px solid yellow; */
   font-family: poppins, sans-serif;
   color: #000000;
 }
@@ -2346,7 +2345,6 @@ header .byline {
 
 #email-icon {
   float: left;
-  /* border: 2px solid yellow; */
 }
 
 #email-name {
@@ -2623,7 +2621,6 @@ header .byline {
 
 /*Center the aramark card */
 .pg2 {
-  /* border: 2px solid yellow; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2965,11 +2962,17 @@ header .byline {
 /* Code Section */
 /****************/
 .container {
-  /*border: 2px solid yellow;*/
 }
 
 .post {
   text-align: center;
+}
+
+.post-body {
+  text-align: left;
+  font-size: 20px;
+  list-style-type: disc;
+  
 }
 
 .post-header {
@@ -2991,10 +2994,5 @@ header .byline {
 #AWS-Diagram {
   height: 500px;
   width: 750px;
-}
-
-#Figma-Resume {
-  height: 600px;
-  width: 600px;
 }
 /*# sourceMappingURL=style.css.map */
