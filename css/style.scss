@@ -26,9 +26,10 @@ body {
 }
 
 body, #skel-panels-pageWrapper {
-	background: rgb(186, 208, 229);
-	background-image: url(../images/mountain2.jpg);
-	background-repeat: repeat-y;
+  /* background: #bad0e5; */
+  /* background-image: url(../images/mountain2.jpg); */
+  background: linear-gradient(90deg, rgba(185,213,241,1) 0%, rgba(174,214,244,1) 43%, rgba(180,226,247,1) 100%);
+  background-repeat: repeat-y;
 }
 
 
@@ -887,7 +888,6 @@ a:hover {
 		// border: 2px solid blue;
 	}
 	#view-count-div {
-		// border: 2px solid yellow;
 		width: 30%;
 		margin-left: auto;
 		margin-right: auto;
@@ -1064,7 +1064,6 @@ a:hover {
 /* Header Content */
 /******************/
 	.container {
-		/* border: 2px solid yellow; */
 		font-family: $currentFont;
 		color: #000000;
 	}
@@ -1127,7 +1126,6 @@ a:hover {
 	}
 	#email-icon {
 		float: left;
-		/* border: 2px solid yellow; */
 	}
 	#email-name {
 		float: left;
@@ -1491,7 +1489,6 @@ a:hover {
 	}
 
 	#project-gif {
-		// border: 2px solid yellow;
 		height: 300px;
 		margin-top: 15px;
 	}
@@ -1702,35 +1699,50 @@ a:hover {
 /* Code Section */
 /****************/
 .container {
-	border: 2px solid yellow;
 }
 
 .post {
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
+.post-body {
+  text-align: left;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.post-body li {
+  list-style: disc inside;
+  margin-left: 25px;
+}
+
+
 .post-header {
-	font-weight: 500;
-	font-size: 24px;
-	margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.post-date {
+  font-family: verdana;
+  /* font-style: italic; */
+  transform: skew(-13deg);
+  text-align: left;
 }
 
 #blog-posts {
-	font-family: $currentFont;
-	font-weight: 600;
-	font-size: 44px;
-	text-align: center;
-	margin-bottom: 50px;
-	color:rgb(8, 8, 8);
-	text-shadow: 1px 1px 4px #4d4d4d;
-
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #080808;
+  text-shadow: 1px 1px 4px #4d4d4d;
 }
+
 #AWS-Diagram {
-	height: 500px;
-	width: 750px;
-}
-
-#Figma-Resume {
-	height: 600px;
-	width: 600px;
+  height: 500px;
+  width: 750px;
 }
